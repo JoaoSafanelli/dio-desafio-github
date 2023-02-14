@@ -4,62 +4,62 @@
 Git é o sistema de controle de versão open source mais usado no mundo atualmente! Ele é usado para controlar o histórico de alterações de arquivos e principalmente de projetos de desenvolvimento de software. Ele permite mais flexibilidade no fluxo de trabalho, segurança e desempenho.
 
 
-## Primeiros passos/comandos utilizando Git:
+# Primeiros passos/comandos utilizando Git:
 
 
-**$ git init**
+$ git init
 
 Para começar um projeto que ainda não seja um repositório, o Git Init costuma ser o comando mais indicado. 
 Ele cria um repositório vazio ou transforma uma pasta que você já tem e que não está com controle de versão em um repositório
 
 
-**$ git config --global user.name "nome_usuario"**
-**$ git config --global user.email nome_usuario@exemplo.br**
+$ git config --global user.name "nome_usuario"
+$ git config --global user.email nome_usuario@exemplo.br
 
 Com o primeiro repositório criado no Git, devesse configurar nome de usuário e endereço de e-mail. Isto é importante porque cada commit usa esta informação, e ela é carimbada de forma imutável nos commits que você começa a criar. 
 Recomenda-se usar o mesmo usuário e e-mail do GitHub para melhor sincronização.
 
 
-**$ git add . ou $ git add <arquivo>**
+$ git add . ou $ git add <arquivo>
 
 Ao criarmos, modificarmos ou excluirmos um arquivo, essas alterações acontecerão em nosso espaço de trabalho local e não serão incluídas no próximo commit.
 Precisamos usar o comando git add para incluir as alterações de um ou vários arquivos em nosso próximo commit.
 
 
-**$ git commit -m "mensagem do commit"**
+$ git commit -m "mensagem do commit"
 
 Quando chegamos a determinado ponto em desenvolvimento, queremos salvar nossas alterações. Git commit é como definir um ponto de verificação no processo de desenvolvimento. Você pode voltar a esse ponto mais tarde, se necessário.
 Também precisamos escrever uma mensagem breve para explicar o que desenvolvemos ou alteramos no código-fonte. O git commit salva suas alterações no espaço de trabalho local.
 
 
 Chegando nesse ponto é preciso enviar o projeto para o GitHub, pois está tudo local.
-Segue link da documentação para criar o repositório do GitHub: ***https://docs.github.com/pt/get-started/quickstart/create-a-repo***
+Segue link da documentação para criar o repositório do GitHub: https://docs.github.com/pt/get-started/quickstart/create-a-repo
 
 
 Criado o repositório no GitHub, copiar a URL fornecida e indicar no Git para que seja feita a conexão:
 
-**$ git remote add origin https://github.com/usuario_github/novo-repositorio.git**
+$ git remote add origin https://github.com/usuario_github/novo-repositorio.git
 
 
-Segue link do GitHub para que autenticação com Git: ***https://docs.github.com/pt/get-started/quickstart/set-up-git***
+Segue link do GitHub para configurar autenticação com Git: https://docs.github.com/pt/get-started/quickstart/set-up-git
 
 
-**$ git remote -v**
+$ git remote -v
 
 Se tudo foi feito corretamente o comando git remote retorna qual nome da branch está conectada
 
 
-**$ git push origin <nome-branch>**
+$ git push origin <nome-branch>
 
 Envia as alterações realizadas localmente para o servidor remoto
 
 
-**$ git pull <nome-branch>**
+$ git pull <nome-branch>
 
 Baixa os arquivos localmente para que possa realizar alterações
 
 
-**$ git clone <url_repositorio>**
+$ git clone <url_repositorio>
 
 Efetua uma cópia do repositório remoto para sua máquina local
 
